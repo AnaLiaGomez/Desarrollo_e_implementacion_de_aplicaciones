@@ -1,0 +1,267 @@
+:root {
+    --SIZE_CAMERA: 30px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+}
+
+.linea {
+	position: absolute;
+	width: 410px;
+	height: 690px;
+	top: -190px;
+	left: -70px;
+	border-radius: 500px;
+	transform: rotate(179deg);
+	background-image: linear-gradient(
+		to right,
+		hsl(264, 100%, 61%),
+		60%,
+		hsl(293, 100%, 63%)
+	);
+}
+
+.cuerpo {
+    background-color: hsl(206, 6%, 79%);
+    border-radius: 30px; 
+}
+
+.container {
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    display: flex;
+}
+
+.telefono {
+    width: min(90%, 375px);
+    padding: 20px;
+    background-color: white;
+    position: relative;
+    border: 1px solid #f8f6f6; 
+    border-radius: 30px; 
+}
+
+.encabezado {
+    background: linear-gradient( hsl(293, 100%, 63%) ,hsl(264, 100%, 61%));
+    text-align: center;
+    justify-content: start;
+    align-items: end;
+    display: flex;
+    gap: 20px;
+    border-radius: 0px 0px 20px 20px;
+    position: absolute;
+    width: calc(100% - 40px);
+    padding: 10px 10px;
+    padding-top: var(--SIZE_CAMERA);
+    border-radius: 20px;
+    height: 12%;
+    color: white;
+}
+
+.encabezado_camera{
+    width: 200px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(35%);
+    height: var(--SIZE_CAMERA);
+    border-radius: 0px 0px 20px 20px;
+}
+
+.icon{
+    display: flex;
+    position: relative;
+    right: -30px;
+    margin-bottom: 10px;
+    width: 25px;
+    height: 25px;
+}
+
+
+.encabezado img{
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid;
+    display: flex;
+    margin-right: 30px;
+    justify-content: center;
+    position: relative;
+    right: -30px;
+    
+}
+
+.dots{
+    display: flex;
+    position: relative;
+    margin-bottom: 10px;
+    width: 25px;
+    height: 25px;
+}
+
+.sounds {
+    background-color:  hsl(270, 20%, 96%) ;
+    border-radius: 1rem;
+    padding: 10px;
+    margin: 10px;
+    width: 60%;
+    color: hsl(271, 15%, 43%);
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 100px;
+}
+
+.send {
+    background-color:  hsl(270, 20%, 96%) ;
+    border-radius: 1rem;
+    padding: 10px;
+    margin: 10px;
+    width: 60%;
+    color: hsl(271, 15%, 43%);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+img{
+    display: flex;  
+    max-width: 100%;  
+    height: auto;
+    width: 80px;
+    border-radius: 15px;
+}
+
+.imagen{
+    display: flex;
+    width: 95%;
+    justify-content: right;
+    gap: 5px;
+}
+
+.here{
+    background-color:  hsl(0, 0%, 100%);
+    border-radius: 1rem;
+    padding: 10px;
+    margin: 10px;
+    width: 60%;
+    margin-left: auto; 
+    color: hsl(276, 55%, 52%);
+}
+.can{
+    background-color:  hsl(0, 0%, 100%);
+    border-radius: 1rem;
+    padding: 10px;
+    margin: 10px;
+    width: 45%;
+    margin-left: auto; 
+    color: hsl(276, 55%, 52%);
+}
+.looks{
+    background-color:  hsl(270, 20%, 96%) ;
+    border-radius: 1rem;
+    padding: 10px;
+    margin: 10px;
+    width: 65%;
+    color: hsl(271, 15%, 43%);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.minute{
+    margin-top: auto;
+    width: 70%;
+    padding: 15px;
+    border-radius: 1rem;
+    background: linear-gradient(hsl(293, 100%, 63%),hsl(264, 100%, 61%));
+    font-size: 15px;
+    display: flex;
+    color: white;
+    margin: 15px;
+    align-items: center;
+}
+
+.hour{
+    margin-top: auto;
+    width: 70%;
+    padding: 15px;
+    border-radius: 1rem;
+    background: linear-gradient(hsl(293, 100%, 63%),hsl(264, 100%, 61%));
+    font-size: 15px;
+    display: flex;
+    color: white;
+    margin: 15px;
+    align-items: center;
+}
+
+.circulo {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 0.1rem solid white;
+    margin-right: 10px;
+}
+
+.costo{
+    font-size: 20px;
+    font-weight: bold;
+    flex: 1;
+    text-align: right;
+    order: 2;
+}
+
+.type{
+    background-color:  hsl(0, 0%, 100%);
+    border-radius: 1rem;
+    padding: 10px;
+    margin: 15px;
+    width: 90%;
+    font-size: 13px;
+    color: gray;
+    display: flex; 
+    align-items: center; 
+}
+
+.type img{
+    height: 25px;
+    width: 25px;
+    display: flex;
+    margin-left: 150px;
+    order: 1;
+}
+
+.text{
+    display: inline-block;
+    font-size: 15px;
+    margin: 30px;
+    text-align: center;
+    color: hsl(206, 6%, 79%);
+    width: 350px;
+    line-height: 1.5rem;
+    position: relative;
+}
+
+.text h1{
+    color:hsl(271, 36%, 24%);
+}
+
+
+@media (max-width: 1124px) {
+    .container {
+        flex-direction: column;
+    }
+    .text {
+        position: absolute;
+        right: 10%;
+    }
+}
+
+
+
+
